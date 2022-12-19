@@ -1,0 +1,102 @@
+body{
+    background-color:var(--color-grey-5);
+}
+
+
+@media(min-width: 870px){
+    .subTituloHeader{
+        width: 857px;
+        height: 72px;
+        font-family: var(--text-1);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 72px;
+    }
+    .descricaoHeader{
+        width: 893px;
+        height: 122px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        font-family: var(--text-1);
+        margin-bottom: 60px;
+    }
+
+    .li_divTituloEmpresaLugar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 38px;
+        gap: 28px;
+        width: 718px;
+        height: 307px;
+        background: var(--color-grey-6);
+        border-radius: 8px;
+    }
+    .tituloDoCard{
+        width: 591px;
+        height: 33px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: var(--color-grey-1)
+    }
+    .divEmpresaELocalizacao{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+
+        width: 205px;
+        height: 22px;
+    }
+    .cardDescricao{
+        width: 640px;
+        height: 64px;
+        font-family: var( --text-2);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--color-grey-2)
+    }
+    .divRemotoOfficeEBotao{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 413px;
+        width: 5px;
+        height: 38px;
+    }
+    .assideCard{
+        position: absolute;
+        width: 403px;
+        /* height: 316px; */
+        right: 350px;
+        position: sticky;
+        position: absolute;
+        top: 900px;
+    }
+    .spanModalidade{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 10px;
+        width: 151px;
+        height: 35px;
+    }
+
+
+ } 
+ 
+ 

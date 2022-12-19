@@ -1,0 +1,218 @@
+main{
+    background-color:var(--color-grey-5);
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    
+   
+    
+
+}
+.li_divTituloEmpresaLugar{
+    background-color:var(--color-grey-6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px;
+    gap: 28px;
+    width: 344px;
+    height: 530px;
+    border-radius: 8px;
+    list-style: none;
+
+}
+.divEnglobaEmpresaELocalizacao{
+    display: flex;
+    flex-direction: row;
+
+}
+.vagas{
+  
+    width: 73px;
+    height: 33px;
+    margin-left: 20px;
+    margin-bottom: 112px;
+    margin-top: 43px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #212529;
+}
+.containerCards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 38px; */
+    gap: 28px;
+    width: 344px;
+    /* height: 530px; */
+    border-radius: 8px;
+    margin-bottom: 32px;
+    
+    list-style: none;
+
+}
+.divTituloEmpresaELugar{
+    background-color: var(--color-grey-6);
+  
+
+}
+
+.tituloDoCard{
+    width: 100%;
+    height: 66px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--title-4);
+    line-height: 33px;
+    color: #212529;
+}
+
+.tituloEmpresa{
+    
+    width: 117px;
+    height: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-grey-2);
+}
+.tituloLocalizacao{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-grey-2)
+
+}
+.divEmpresaELocalizacao{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 205px;
+    height: 22px;
+}
+.cardDescricao{
+    width: 268px;
+    height: 192px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-grey-2)
+}
+.divRemotoOfficeEBotao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 268px;
+    height: 100px;
+
+}
+.spanModalidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 10px;
+    width: 121px;
+    height: 30px;
+    background: var(--color-grey-3);
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+}
+.botaoCandidatar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+    width: 268px;
+    height: 38px;
+    background:var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    border-radius: 8px;
+    color: var(--color-grey-6);
+    font-family: 'Poppins';
+    cursor: pointer;
+
+}
+
+.li{
+    margin: 20px;
+}
+
+.assideCard{
+    width: 343px;
+    height: 367px;
+    
+    background: var(--color-grey-6);
+    border-radius: 8px;   
+    list-style: none;
+    padding: 32px;
+    overflow-x: auto;
+}
+.liassideCard{
+    width: 343px;
+    height: 367px;
+    
+    background: pink;
+    border-radius: 8px;   
+    list-style: none;
+    padding: 32px;
+}
+h2{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.pAssideCard{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-grey-2);
+    margin-top:32px;
+    margin-left: 20px;
+
+}
+.vagasSelecionadas{
+   
+    height: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--color-grey-1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 10px;
+
+
+}

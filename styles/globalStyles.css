@@ -38,11 +38,14 @@ body {
 }
 
 .container {
-  width: 76rem;
-  max-width: 100%;
+  max-width:100%;
+  width:  76rem;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 @media(max-width: 991px){
