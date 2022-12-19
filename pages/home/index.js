@@ -30,7 +30,7 @@ function renderizarCards(job){
 
     const divContemEmpresaELocalizacao= document.createElement('div')
     divContemEmpresaELocalizacao.classList.add('divEmpresaELocalizacao')
-
+    
     const pTituloEmpresa= document.createElement('p')
     pTituloEmpresa.classList.add('tituloEmpresa')
     pTituloEmpresa.innerText= job.enterprise
@@ -40,6 +40,7 @@ function renderizarCards(job){
     pTituloLocalizacao.classList.add('tituloLocalizacao')
     pTituloLocalizacao.innerText= job.location
     console.log(pTituloLocalizacao)
+    
 
     const pCardDescricao = document.createElement('p')
     pCardDescricao.classList.add('cardDescricao')
@@ -141,6 +142,7 @@ function renderizandoVagasEscolhidasClicandoNoBotao(elementoBotaoCandidatar, vag
 
     const divEnglobaEmpresaELocalizacao= document.createElement('div')
     divEnglobaEmpresaELocalizacao.classList.add('divEmpresaELocalizacao')
+    divEnglobaEmpresaELocalizacao.append(pTituloDoCardRenderizado)
 
     const pEnglobaTituloEmpresa= document.createElement('p')
     pEnglobaTituloEmpresa.classList.add('tituloEmpresa')
@@ -203,19 +205,3 @@ function abaVagasSelecionadas(){
 
 }
 abaVagasSelecionadas()
-
-// const btn = document.querySelectorAll('.botaoCandidatar')
-
-// btn.forEach(x => {
-//     x.addEventListener('click', (elemento) =>{
-//         if(x.innerHTML == 'Candidatar'){
-//             x.innerHTML = 'Remover Candidatura';
-//             // elemento.append(renderizandoVagasEscolhidasClicandoNoBotao())
-//             renderizandoVagasEscolhidasClicandoNoBotao(jobsData)
-//         }
-//         else{
-//             x.innerHTML='Candidatar';
-//         }
-//     }
-     
-// )})
