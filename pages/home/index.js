@@ -153,6 +153,7 @@ function renderizandoVagasEscolhidasClicandoNoBotao(elementoBotaoCandidatar, vag
     pEnglobaTituloLocalizacao.classList.add('tituloLocalizacao')
     pEnglobaTituloLocalizacao.innerText= vagaRenderizada.location
 
+
     const imagemLixeira = document.createElement('img')
 
     imagemLixeira.src="../../assets/img/removeVaga.png"
@@ -167,8 +168,9 @@ function renderizandoVagasEscolhidasClicandoNoBotao(elementoBotaoCandidatar, vag
     
     divGuardaTituloComBotao.append(pTituloDoCardRenderizado,botaoRemover)
     divGuardaTituloComBotao.classList.add('divGuardaTituloComBotao')
+    divEnglobaEmpresaELocalizacao.append(pEnglobaTituloEmpresa,pEnglobaTituloLocalizacao)
 
-    divEnglobaTituloEmpresaLugar.append(divGuardaTituloComBotao,botaoRemover,divEnglobaEmpresaELocalizacao,pEnglobaTituloEmpresa,pEnglobaTituloLocalizacao)
+    divEnglobaTituloEmpresaLugar.append(divGuardaTituloComBotao,botaoRemover, divEnglobaEmpresaELocalizacao)
     
     botaoRemover.onclick = ()=>{
         divEnglobaTituloEmpresaLugar.remove();
