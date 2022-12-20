@@ -1,3 +1,6 @@
+let arrayVagas=[]
+arrayVagas.push(jobsData)
+let vagaSelecionada = []
 
 
 function jobsCard(jobs){
@@ -12,11 +15,12 @@ function jobsCard(jobs){
 
 // aqui estou renderiando via dom  as opções de vagas
 function renderizarCards(job){
-    
 
+    const sectionContainerCards= document.createElement('section')
     const localizandoNaMain2 = document.querySelector('.containerCards')
     const ulContainer= document.createElement('ul')
     ulContainer.classList.add('containerCards')
+
 
     const liTituloEmpresaLugar= document.createElement('li')
     liTituloEmpresaLugar.classList.add('li_divTituloEmpresaLugar')
@@ -58,9 +62,29 @@ function renderizarCards(job){
     buttonCandidatar.dataset.id= job.id
     buttonCandidatar.innerText = 'Candidatar'
 
-    buttonCandidatar.addEventListener('click', () =>{
+    buttonCandidatar.addEventListener('click', (event) =>{
+        console.log(event.target.dataset.id)
+        
         if(buttonCandidatar.innerHTML == 'Candidatar'){
             renderizandoVagasEscolhidasClicandoNoBotao(buttonCandidatar, job)
+           
+            // const vagaSelecionada = arrayVagas.find((item)=>{
+            //     return item.id == jobsData[i].id
+            //     vagaSelecionada.JSON= JSON.stringfy(item)
+            //     arrayVagas.push(vagaSelecionada)
+    
+            // })
+            vagaSelecionada.push(job)
+            localStorage.setItem('vagasSelecionadas', JSON.stringify(vagaSelecionada))
+            
+
+            
+            
+          
+           
+            
+            
+
 
             buttonCandidatar.innerHTML = 'Remover Candidatura';
         }
@@ -99,8 +123,9 @@ function renderizarCards(job){
     dRemotoOfficeEBotao.append(spanHomeOffice,buttonCandidatar)
     liTituloEmpresaLugar.append(divTituloEmpresaLugar,pCardDescricao,dRemotoOfficeEBotao)
     ulContainer.append(liTituloEmpresaLugar)
+    sectionContainerCards.append(ulContainer)
     
-    localizandoNaMain2.append(ulContainer)
+    localizandoNaMain2.append(sectionContainerCards)
     console.log(localizandoNaMain2)
    
 
@@ -131,7 +156,8 @@ function gerarCardVagaSelecionada(){
 
 function renderizandoVagasEscolhidasClicandoNoBotao(elementoBotaoCandidatar, vagaRenderizada){
     const localizandoNoHtml = document.querySelector('.assideCard')
-   
+    const sectionAssideCard= document.createElement('section')
+    sectionAssideCard.classList.add('sectionAssideCard')
         
     const  divEnglobaTituloEmpresaLugar = document.createElement('div')
     divEnglobaTituloEmpresaLugar.classList.add('divTituloEmpresaLugar')
@@ -169,15 +195,16 @@ function renderizandoVagasEscolhidasClicandoNoBotao(elementoBotaoCandidatar, vag
     divGuardaTituloComBotao.append(pTituloDoCardRenderizado,botaoRemover)
     divGuardaTituloComBotao.classList.add('divGuardaTituloComBotao')
     divEnglobaEmpresaELocalizacao.append(pEnglobaTituloEmpresa,pEnglobaTituloLocalizacao)
-
+    
     divEnglobaTituloEmpresaLugar.append(divGuardaTituloComBotao,botaoRemover, divEnglobaEmpresaELocalizacao)
+    sectionAssideCard.append(divEnglobaTituloEmpresaLugar)
     
     botaoRemover.onclick = ()=>{
         divEnglobaTituloEmpresaLugar.remove();
         elementoBotaoCandidatar.innerHTML='Candidatar';
     };
 
-    localizandoNoHtml.append(divEnglobaTituloEmpresaLugar)
+    localizandoNoHtml.append(sectionAssideCard)
    
     
 
@@ -207,3 +234,5 @@ function abaVagasSelecionadas(){
 
 }
 abaVagasSelecionadas()
+localStorage.setItem('meuGato', 'Tom');
+

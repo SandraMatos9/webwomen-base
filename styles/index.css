@@ -4,8 +4,9 @@ body{
 
 
 @media(min-width: 870px){
-    .main{
-        position: absolute;
+    main{
+        display: flex;
+        flex-direction: row;
     }
     .subTituloHeader{
         width: 857px;
@@ -78,15 +79,19 @@ body{
         width: 5px;
         height: 38px;
     }
-    .assideCard{
+    .sectionContainerCards{
+        display: flex;
+        width: 718px;
+
         
-        width: 403px;
-        /* height: 316px; */
-        right: 350px;
-        position: sticky;
-        position: absolute;
-        top: 900px;
-        z-index: 2;
+        
+       
+    }
+    .sectionAssideCard{
+        display: flex;
+        flex-direction: row;
+        
+        
     }
     .spanModalidade{
         display: flex;
